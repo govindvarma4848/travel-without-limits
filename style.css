@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+/* header */
+.header{
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo_sec, .menu_sec{
+    height: 70px;
+}
+
+.logo_sec{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo_sec img{
+    height: 100%;
+    margin:0 15px;
+}
+
+.brand_name{
+    /* font-size: 20px;
+    font-weight: 600; */
+    font-family: "Satisfy", cursive;
+    color: #f44336;
+    font-weight: bolder;
+    font-size: larger;
+}
+.menu_sec{
+    margin-right:50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu_sec a{
+    margin: 12px 7px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: transform 1s;
+}
+
+.menu_sec a:hover{
+    transform: scale(1.3);
+    background: aliceblue;
+    border-bottom: 3px solid rgb(93, 176, 249) ;
+    border-radius: 5px;
+
+}
+
+/* //main_content  */
+.main_content{
+    height: 700px;
+    background-image: url('Images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.main_content p{
+    /* margin-bottom: 20px; */
+    font-size: 18px;
+}
+
+.main_content h1{
+    font-family: "Dancing Script", cursive;
+}
+
+
+
+/* //our services */
+
+.our_services_h1{
+    text-align: center;
+    margin: 100px 0;
+}
+.main_content h1{
+    color: white;
+    display: block;
+}
+.our_services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.card1, .card2, .card3{
+    width: 350px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: transform 0.7s;
+    margin-bottom: 20px;
+
+}
+
+.card1 img, .card2 img, .card3 img{
+    width: 100%;
+    height: 350px;
+    border-bottom: 2px solid black;
+    border-radius: 7px 7px 0 0 ;
+}
+.card1 p, .card2 p, .card3 p{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1:hover, .card2:hover, .card3:hover{
+    transform: scale(1.1);
+}
+
+/* About us  */
+
+.about_us{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: justify;
+
+}
+
+.about_us h3{
+    padding: 50px 0 0 20px;
+    margin-bottom: 0;
+}
+.side_p p{
+    max-width: 600px;
+    padding: 30px 70px 50px 20px ;
+    margin-top: 0;
+
+}
+
+.side_img img{
+    width: 600px;
+    padding: 70px;
+    height: 380px;
+}
+
+
+/* //gallery  */
+
+.our_gallery{
+    margin: 100px 0 50px 0;
+}
+
+.our_gallery h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pics img{
+    width: 350px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 70px 30px 0;
+    transition: transform 0.7s;
+}
+.pics{
+    margin: 0 0 0 80px;
+}
+
+
+.pics img:hover{
+    transform: scale(1.1);
+}
+/* //footer  */
+
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px dashed white;
+}
+.admin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+    color: white;
+    
+}
+
+.admin a{
+    font-family: "Dancing Script", cursive;
+    transition: transfrom 0.7s;
+}
+.admin a:hover{
+    text-decoration: none;
+    border-bottom:1px solid  red;
+}
+
+
+/* // media Queries  */
+
+@media only screen and (max-width:700px){
+
+    body{
+        width: 100%;
+    }
+    .menu_sec{
+        display: none;
+    }
+
+    .side_img img{
+        width: 350px;
+        padding: 0;
+        padding: 40px;
+    }
+
+    .about_us{
+        width: 100%;
+    }
+
+
+    .pics img{
+        margin: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .main_content p{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .main_content h1{
+        margin-top: 0px;
+        margin-bottom:30px
+    }
+
+    .card1, .card2, .card3{
+        margin-bottom: 20px;
+    }
+
+    .side_p p {
+        padding: 35px;
+    }
+    .side_p h3{
+        margin: 0;
+        padding: 30px 0 0px 35px;
+    }
+
+    .our_gallery h1{
+        text-align: center;
+
+    }
+    .pics{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our_gallery{
+        margin: 70px 0;
+    }
+    .pics img{
+        margin-bottom: 20px;
+    }
+
+    .our_services{
+        margin-bottom:70px
+    }
+
+    .our_services_h1{
+        margin: 70px 0;
+    }
+}
