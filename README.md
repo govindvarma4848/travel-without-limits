@@ -1,16 +1,28 @@
 SpiceJet - Fly with Joy ✈️
 ![spicejet-travel-landing Preview](travels.png)
-A simple and responsive airline landing page inspired by SpiceJet.
-Built using pure HTML and CSS.
+✈️ Travel Without Limits
 
-🚀 Features
+A modern and responsive travel landing page inspired by airline booking websites.
+Built using pure HTML and CSS with a clean and attractive user interface.
+
+🌐 Live Demo
+
+🔗 GitHub Repository:
+travel-without-limits Repository
+
+🔗 Live Website:
+Travel Without Limits Website
+
+📸 Website Preview
+
+This project contains:
+
 Responsive Navigation Bar
-Hero Section
-Services Cards
+Hero Banner
+Services Section
 About Us Section
-Image Gallery
-Footer Section
-Clean UI Design
-🛠️ Technologies Used
+Travel Gallery
+Footer & Contact Information
+🚀 Technologies Used
 HTML5
 CSS3
